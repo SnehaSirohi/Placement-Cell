@@ -1,5 +1,3 @@
-
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -276,7 +274,8 @@ blockquote p {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  padding: 23px 0;
+  height: 14%;
+  
 /*transition*/
   -webkit-transition: all .15s linear;
      -moz-transition: all .15s linear;
@@ -291,8 +290,10 @@ blockquote p {
 .logo {
   display: block;
   float: left;
-  width: 130px;
-  height: 120px;
+  padding: 2px 0;
+  width: 100px;
+  height: 95px;
+  
   text-indent: -9999px;
   /* background: url(images/logo.svg) no-repeat; */
   background-size: 104px 46px;
@@ -1576,9 +1577,16 @@ footer p, footer a {
   Media queries
 ---------------------------------------------------------------*/
 
+@media screen and (max-width:1650px) {
+  #top-header {
+    padding: 13px 8px;
+    height: 100px;
+  }
+}
 @media handheld, only screen and (max-width: 1200px) {
   #top-header {
-    padding: 15px 20px;
+    padding: 15px 8px;
+    height: 100px;
   }
 
   #price-tables #plans .plan {
